@@ -1,0 +1,109 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+--Dark-grayish-blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    background:var(--Cream);
+    min-height: 100vh;
+    display: grid;
+   place-content: center;
+
+}
+#product{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    max-width: 600px;
+    margin: 1rem;
+
+}
+img,
+picture{
+    display: block;
+    max-width: 100%;
+}
+.product-content{
+    background-color: #fff;
+    padding: 2rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#product img{
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+#product .category{
+font-size:12px ;
+letter-spacing: 4px;
+color: var(--Dark-grayish-blue);
+}
+#product h1{
+    font-size: 32px;
+    margin: 20px 0;
+    line-height: 1;
+}
+.product-content p{
+    font-size: 14px;
+    color: var(--Dark-grayish-blue);
+    line-height: 1.5;
+
+
+
+}
+.product-content .price{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+
+}
+.product-content .price #discount{
+    font-size: 32px;
+    color: var(--Dark-cyan);
+  margin-right: 20px;
+
+}
+.cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--Dark-cyan);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-weight: 700;
+}
+.cart::before{
+    content: "";
+    background: url(./images/icon-cart.svg);
+    width: 15px;
+    height: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+@media(max-width:700px){
+    #product{
+    grid-template-columns: 1fr;
+}
+#product img{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 0;
+}
+.product-content{
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+}
+}
