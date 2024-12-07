@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+--Strong-Cyan: hsl(171, 66%, 44%);
+--Light-Blue: hsl(233, 100%, 69%);
+
+
+--Dark-Grayish-Blue: hsl(210, 10%, 33%);
+--Grayish-Blue: hsl(201, 11%, 66%);
+
+}
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    }
+.top-home{
+    margin: auto;
+    width: 600px;
+}    
+    .container .logo{
+        margin: auto;
+       margin-top: 50px;
+       margin-left: 200px;
+        width: 100px;
+
+    }
+    .container .top-home h1 ,h2,h3,#access h3,  #brand h3{
+        font-size: 40px;
+        color:var(--Dark-Grayish-Blue) ;
+        margin: auto;
+       
+       margin-top: 20px;
+       margin-bottom: 15px;
+
+    }
+    h2{
+        font-size:30px ;
+      margin-left: 80px;
+    }
+    .container .top-home p,    .botton-home p,    #access p,  #brand p{
+        font-size: 15px;
+        color: var(--Grayish-Blue);
+        width: 500px;
+      margin: auto;
+      margin-bottom: 50px;
+    }
+    .container .top-home p span{
+        font-size: 15px;
+        color: var(--Grayish-Blue);
+        width: 500px;
+      margin: auto;
+    }
+    .container .top-home .click {
+        margin: auto;
+        width: 400px;
+        margin-left: 100px;
+    }
+    a{
+        text-decoration: none;
+    }
+    .container .top-home .click a{
+        
+        width: fit-content;
+        padding: 7px 18px ;
+        font-size: 14px;
+        color: white;
+        border-radius: 20px;
+        margin-top:50px ;
+        
+    }
+    .container .top-home .click .one{
+        background-color: var(--Strong-Cyan);
+        margin-right: 20px;
+    }
+    .container .top-home .click .two{
+        background-color: var(--Light-Blue);
+    }
+    .botton-home{
+        display: flex;
+    }
+    .botton-home img{
+        width :600px;
+        margin-right: 100px;
+    }
+    .botton-home .h3{
+        font-size: 25px;
+
+    }
+    .botton-home p{
+
+    }
+
+    #access h3{
+        margin: auto;
+        width: 500px;
+        margin-bottom: 30px;
+
+    }
+    
+    #access img{
+        width: 60%;
+        height: 500px;
+        margin: auto;
+        justify-content: center;
+        display: flex;
+    }
+    #brand .three{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-column: 30px;
+    }
+    #brand h3{
+        display: flex;
+        justify-content: center;
+    }
+    #brand p{
+        display: flex;
+        justify-content: center;
+    }
+    #brand .item img{
+        width: 30px;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+
+    }
+    #brand .item h3{
+        display: flex;
+        justify-content: center;
+        font-size: 19px;
+        margin-top: 20px;
+        margin-bottom: 15px;   
+    }
+    #brand .item  p{
+      margin: auto;
+      max-width:350px;
+      display: flex;
+      justify-content: center;
+      line-height: 1.6;
+    }
+    .three{
+        margin-bottom: 50px;
+    }
+    .brands {
+        margin: auto;
+        margin-left: 140px;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        column-gap: 40pxs;
+    }
+    #brand h3{
+        margin-top: 50px;
+    }
+
+.lastt{
+    width: 450px;
+    margin: auto;
+    margin-bottom: 100px;
+
+}
+   #brand a{
+        
+    width: fit-content;
+    padding: 7px 18px ;
+    font-size: 14px;
+    color: white;
+    border-radius: 20px;
+    margin-top:50px ;
+    margin-left: 50px;
+        
+    }
+   #brand .final{
+        background-color: var(--Strong-Cyan);
+        margin-right: 20px;
+    }
+    #brand .l-final{
+        background-color: var(--Light-Blue);
+    }
